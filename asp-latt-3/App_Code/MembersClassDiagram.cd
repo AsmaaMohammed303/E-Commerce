@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="product">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgBBAAoAgIAAAAAEIAgAEQAAIAIAAEgACCBAgAAAAAA=</HashCode>
+      <FileName>App_Code\product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="category">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAAEIABgAAAAAEIBAAAAAAAAAAAAAAACBAgAAAAEA=</HashCode>
+      <FileName>App_Code\category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="orderdetails">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAEAAAIAAgABAABBAEAAEAAAIAAAAACAAABAggIAAQA=</HashCode>
+      <FileName>App_Code\orderdetails.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="members">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAABMAoBAgQAgABgBAAAgAEAAATFAAAggCIAIgAAEBM=</HashCode>
+      <FileName>App_Code\members.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="card">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEACIAAAAAAAAAAAAgAAMAAAUAAABAAAIAAAAAAIA=</HashCode>
+      <FileName>App_Code\card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="maintable" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAIAAAAQAAAAAAAAAQAAAAAAAAAAACAAAAAEAAA=</HashCode>
+      <FileName>App_Code\maintable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="order" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAAAICAAAAAAVAAEAAAAAAAAIAABQQAAAAAggAAQA=</HashCode>
+      <FileName>App_Code\order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

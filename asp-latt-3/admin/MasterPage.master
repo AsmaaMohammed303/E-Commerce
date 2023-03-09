@@ -1,0 +1,224 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/admin/MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register src="../web_controls/ulcategory.ascx" tagname="ulcategory" tagprefix="uc4" %>
+
+<%@ Register src="../web_controls/ullatestpro.ascx" tagname="ullatestpro" tagprefix="uc2" %>
+
+<%@ Register src="../web_controls/side_search.ascx" tagname="side_search" tagprefix="uc3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript" src="../script.js"></script>
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <body>
+		<div id="art-page-background-glare">
+			<div id="art-page-background-glare-image">
+				<div id="art-main">
+					<div class="art-sheet">
+						<div class="art-sheet-tl"></div>
+						<div class="art-sheet-tr"></div>
+						<div class="art-sheet-bl"></div>
+						<div class="art-sheet-br"></div>
+						<div class="art-sheet-tc"></div>
+						<div class="art-sheet-bc"></div>
+						<div class="art-sheet-cl"></div>
+						<div class="art-sheet-cr"></div>
+						<div class="art-sheet-cc"></div>
+						<div class="art-sheet-body">
+                                    <!--<![new]-->
+                                <!--<![new]-->
+                                <!--<![new]-->
+                                <!--<![new]-->
+                                <!--<![new]-->
+                                <!--<![new]-->
+                                <!--<![new]-->
+                                <!--<![new]-->
+
+
+                                  <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+							<div class="art-header">
+								<div class="art-header-jpeg"></div>
+								<script type="text/javascript" src="../swfobject.js"></script>
+								<div id="art-flash-area">
+									<div id="art-flash-container">
+										<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="900" height="225" id="art-flash-object">
+											<param name="movie" value="../images/flash.swf" valuetype="data"></param>
+											<param name="quality" value="high" valuetype="data"></param>
+											<param name="scale" value="exactfit" valuetype="data"></param>
+											<param name="wmode" value="transparent" valuetype="data"></param>
+											<param name="flashvars" value="color1=0xFFFFFF&alpha1=.30&framerate1=24&loop=true&wmode=transparent" valuetype="data"></param>
+											<param name="swfliveconnect" value="true" valuetype="data"></param>
+											<!--[if !IE]>-->
+											<object type="application/x-shockwave-flash" data="../images/flash.swf" width="900" height="225">
+												<param name="quality" value="high" valuetype="data"></param>
+												<param name="scale" value="exactfit" valuetype="data"></param>
+												<param name="wmode" value="transparent" valuetype="data"></param>
+												<param name="flashvars" value="color1=0xFFFFFF&alpha1=.30&framerate1=24&loop=true&wmode=transparent" valuetype="data"></param>
+												<param name="swfliveconnect" value="true" valuetype="data"></param>
+												<!--<![endif]-->
+												<div class="art-flash-alt"><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></div>
+												<!--[if !IE]>-->
+											</object>
+											<!--<![endif]-->
+										</object>
+									</div>
+								</div>
+                    
+								<script type="text/javascript">								    swfobject.switchOffAutoHideShow(); swfobject.registerObject("art-flash-object", "9.0.0", "expressInstall.swf");</script>
+								<div class="art-logo">
+									<!--<h1 id="name-text" class="art-logo-name"><a href="./Default.aspx"> Online Shopping</a></h1>
+									-->
+								</div>
+							</div>
+						
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+
+
+							<div class="art-content-layout">
+								<div class="art-content-layout-row">
+									<div class="art-layout-cell art-content">
+										<div class="art-post">
+											<div class="art-post-body">
+												<div class="art-post-inner art-article">
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                    </asp:ContentPlaceHolder>
+													<div class="cleared"></div>
+												</div>
+												<div class="cleared"></div>
+											</div>
+										</div>
+										<div class="cleared"></div>
+									</div>
+									<div class="art-layout-cell art-sidebar1">
+										
+										<div class="art-block">
+											<div class="art-block-tl"></div>
+											<div class="art-block-tr"></div>
+											<div class="art-block-bl"></div>
+											<div class="art-block-br"></div>
+											<div class="art-block-tc"></div>
+											<div class="art-block-bc"></div>
+											<div class="art-block-cl"></div>
+											<div class="art-block-cr"></div>
+											<div class="art-block-cc"></div>
+											<div class="art-block-body">
+												<div class="art-blockheader">
+													<div class="l"></div>
+													<div class="r"></div>
+													<h3 class="t">Search</h3>
+												</div>
+												<div class="art-blockcontent">
+													<div class="art-blockcontent-body">
+														<div>
+                                                        <uc3:side_search ID="side_search1" runat="server" />
+														</div>
+														<div class="cleared"></div>
+													</div>
+												</div>  
+												<div class="cleared"></div>
+											</div>
+										</div>
+                                        		<div class="art-block">
+											<div class="art-block-tl"></div>
+											<div class="art-block-tr"></div>
+											<div class="art-block-bl"></div>
+											<div class="art-block-br"></div>
+											<div class="art-block-tc"></div>
+											<div class="art-block-bc">
+                                                
+                                            </div>
+											<div class="art-block-cl"></div>
+											<div class="art-block-cr"></div>
+											<div class="art-block-cc"></div>
+											<div class="art-block-body">
+												<div class="art-blockheader">
+													<div class="l"></div>
+													<div class="r"></div>
+													<h3 class="t">latest product</h3>
+												</div>
+												<div class="art-blockcontent">
+													<div class="art-blockcontent-body">
+														<div>
+                                                        <uc2:ullatestpro ID="ullatestpro1" runat="server" />
+                                                     
+															
+														</div>
+                                                       
+														<div class="cleared"></div>
+													</div>
+												</div>
+												<div class="cleared"></div>
+											</div>
+										</div>
+										<div class="art-block">
+											<div class="art-block-tl"></div>
+											<div class="art-block-tr"></div>
+											<div class="art-block-bl"></div>
+											<div class="art-block-br"></div>
+											<div class="art-block-tc"></div>
+											<div class="art-block-bc"></div>
+											<div class="art-block-cl"></div>
+											<div class="art-block-cr"></div>
+											<div class="art-block-cc"></div>
+											<div class="art-block-body">
+												<div class="art-blockheader">
+													<div class="l"></div>
+													<div class="r"></div>
+													<h3 class="t">All categories</h3>
+												</div>
+												<div class="art-blockcontent">
+													<div class="art-blockcontent-body">
+													<div>
+                                                         <uc4:ulcategory ID="ulcategory1" runat="server" />
+
+														</div>
+														<div class="cleared"></div>
+													</div>
+												</div>
+												<div class="cleared"></div>
+											</div>
+										</div> 
+							
+										<div class="cleared"></div>
+									</div>
+								</div>
+							</div>
+							<div class="cleared"></div>
+
+							<div class="art-footer">
+								<div class="art-footer-t"></div>
+								<div class="art-footer-l"></div>
+								<div class="art-footer-b"></div>
+								<div class="art-footer-r"></div>
+								<div class="art-footer-body"><a href="./#" class="art-rss-tag-icon" title="RSS"></a>
+									<div class="art-footer-text">
+										<p><a href="https://www.facebook.com/profile.php?id=100003861795958">facebook</a> | <a href="./#">LinkedIn</a> | <a href="./#">Twiteer</a></p>
+										<p>Copyright © 2015. All Rights Reserved.</p>
+									</div>
+									<div class="cleared"></div>
+								</div>
+							</div>
+							<div class="cleared"></div>
+						</div>
+					</div>
+					<div class="cleared"></div>
+						<p class="art-page-footer">development by Asmaa M.Ibrahim at 15-9-2015</p>
+				</div>
+			</div>
+		</div>
+	</body>
+    </div>
+    </form>
+</body>
+</html>
